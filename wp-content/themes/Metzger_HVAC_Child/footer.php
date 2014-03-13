@@ -1,6 +1,19 @@
-		<footer id="footer">
-			<section class="copy">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></section>
-		</footer>
+<footer id="footer">
+	<div class="row">
+		<!-- Pinterest or Instagram Feed Footer -->
+		<div class="large-4 medium-4 small-12 columns">
+			
+		</div>
+		<!-- Contact Info Footer  -->
+		<div class="large-4 medium-4 small-12 columns">
+			<?php echo get_field('contact_info'); ?>
+		</div>
+		<!-- Our Promise Footer -->
+		<div class="large-4 medium-4 small-12 columns">
+			<?php echo get_field('promise_text'); ?>
+		</div>
+	</div>	
+</footer>
 
 
 	<?php wp_footer(); ?>

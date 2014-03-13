@@ -43,6 +43,7 @@
 	
 	<!-- Stylesheets -->
 	<link href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" />
+	<link href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" />
 	<link href="<?php bloginfo('template_url'); ?>/css/reset.css" type="text/css" />
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -56,25 +57,28 @@
 <body <?php body_class(); ?>>
 	
 	<header>
-		<header>
 		<div class="top-head">
 			<div class="row">
 				<div class="xxlarge-3 xlarge-3 large-3 medium-3 small-12 columns">
-					<h1><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a></h1>	
+					<h1>
+						<a href="<?php echo get_option('home'); ?>/">
+							<?php $logo = get_field('site_logo', 'option'); if ($logo): ?>
+								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+							<?php endif; ?>
+						</a>
+					</h1>	
 				</div>
 				<div class="lt-ie9">
-					<div class="row">
-						<div class="xxlarge-9 xlarge-9 large-9 medium-9 columns">
-							<nav class="clearfix">
-								<?php 
-									wp_nav_menu(array(
-									'menu' => 'Primary Menu', 
-									'container_id' => 'cssmenu', 
-									'walker' => new CSS_Menu_Maker_Walker()
-									)); 
-								?>
-							</nav>
-						</div>
+					<div class="xxlarge-9 xlarge-9 large-9 medium-9 columns">
+						<nav class="clearfix">
+							<?php 
+								wp_nav_menu(array(
+								'menu' => 'Primary Menu', 
+								'container_id' => 'cssmenu', 
+								'walker' => new CSS_Menu_Maker_Walker()
+								)); 
+							?>
+						</nav>
 					</div>
 				</div>
 			</div>

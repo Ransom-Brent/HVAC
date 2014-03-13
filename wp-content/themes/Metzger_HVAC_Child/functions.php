@@ -58,13 +58,13 @@ add_action( 'wp_enqueue_scripts', 'responsive_scripts_basic', 5 );
 function responsive_styles()
 {
 	//register styles for our theme
-	wp_register_style( 'my-styles', get_bloginfo('stylesheet_directory') . '/css/custom-style.css', array(), 'all' );
+	wp_register_style( 'main-styles', get_bloginfo('stylesheet_directory') . '/style.css', array(), 'all' );
 	wp_register_style( 'my-nav', get_bloginfo('stylesheet_directory') . '/css/meanmenu.css', array(), 'all' );
 	wp_register_style( 'foundation-style', get_bloginfo('stylesheet_directory') . '/css/foundation.css', array(), 'all' );
 	wp_register_style( 'grid-5--style', get_bloginfo('stylesheet_directory') . '/css/grid-5.css', array(), 'all' );
 	wp_register_style( 'normalize', get_bloginfo('stylesheet_directory') . '/css/normalize.css', array(), 'all' );
 	
-	wp_enqueue_style( 'my-styles' );
+	wp_enqueue_style( 'main-styles' );
 	wp_enqueue_style( 'my-nav' );
 	wp_enqueue_style( 'foundation-style' );
 	wp_enqueue_style( 'grid-5--style' );

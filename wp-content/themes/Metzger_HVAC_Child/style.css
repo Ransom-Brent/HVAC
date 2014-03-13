@@ -7,5 +7,82 @@ Author URI: http://brent-ransom.com
 Template: Metzger_HVAC
 Version: 0.1
 */
+header {
+  margin: 0;
+  padding: 0; }
+  header .top-head {
+    margin: 0;
+    padding: 0;
+    background: #465a7a; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
 
-@import url("../Metzger_HVAC/style.css");
+/* Navigation */
+@media only screen and (min-width: 769px) {
+  /* Navigation Desktop */
+  .nav-bg {
+    height: 40px; }
+
+  #cssmenu {
+    height: 40px;
+    margin: 35px 0 0 0; }
+
+  #cssmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+  #cssmenu li {
+    float: left;
+    position: relative;
+    text-transform: uppercase; }
+
+  #cssmenu a {
+    color: #fff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 0 4px 0 25px;
+    margin: 0 0px; }
+
+  #cssmenu a:hover {
+    padding: 0 4px 0 25px;
+    margin: 0 0px; }
+
+  #cssmenu ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: auto;
+    z-index: 9999; }
+
+  #cssmenu ul ul li {
+    width: 210px; }
+
+  #cssmenu ul li:hover > ul {
+    display: block; }
+
+  #cssmenu ul li ul li a {
+    display: block;
+    background: none; }
+
+  #cssmenu ul li ul li a:hover {
+    display: block; }
+
+  #cssmenu ul ul ul {
+    left: 100%;
+    top: 0;
+    z-index: 9999; }
+
+  #cssmenu ul li ul li a {
+    display: block;
+    background: none;
+    width: 100%; }
+
+  #cssmenu ul li ul li a:hover {
+    display: block; } }
