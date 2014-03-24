@@ -10,87 +10,123 @@ header {
 		margin:0;
 		padding:0;
 	}
+	
+	/* Navigation */
+	@media only screen and (min-width: 769px) {
+	/* Navigation Desktop */
+	.nav-bg {
+    	height: 40px;
+	}
+	#cssmenu{
+    	height: 40px;
+		margin:35px 0 0 0;
+	}
+	#cssmenu ul{
+    	list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	#cssmenu li{
+    	float: left;
+		position:relative;
+		text-transform: uppercase;
+	}
+	#cssmenu a{
+    	color: #fff;
+		display: block;
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		font-size:100%;
+		text-decoration: none;
+		padding:0 4px 0 25px;
+		margin:0 0px;
+	}
+	#cssmenu a:hover{
+		padding:0 4px 0 25px;
+		margin:0 0px;
+	}
+	#cssmenu ul ul{
+    	display:none;
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: auto;
+		z-index:9999;
+	}
+	#cssmenu ul ul li{
+    	width: 210px;
+	}
+	#cssmenu ul li:hover > ul {
+    	display: block;
+	}
+	#cssmenu ul li ul li a {
+    	display: block;
+		background: none;
+	}
+	#cssmenu ul li ul li a:hover {
+    	display: block;
+	}
+	#cssmenu ul ul ul {
+    	left: 100%;
+		top: 0;
+		z-index:9999; 
+	}
+	#cssmenu ul li ul li a {
+    	display: block;
+		background: none;
+		width:100%;
+	}
+	#cssmenu ul li ul li a:hover {
+    	display: block;
+	}
 }
 
-/* Navigation */
-@media only screen and (min-width: 769px) {
-/* Navigation Desktop */
-.nav-bg {
-    height: 40px;
-}
-#cssmenu{
-    height: 40px;
-    margin:35px 0 0 0;
-}
- 
-#cssmenu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
- 
-#cssmenu li{
-    float: left;
-    position:relative;
-    text-transform: uppercase;
-}
- 
-#cssmenu a{
-    color: #fff;
-    display: block;
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    font-size:100%;
-    text-decoration: none;
-	padding:0 4px 0 25px;
-	margin:0 0px;
-}
- 
-#cssmenu a:hover{
-	padding:0 4px 0 25px;
-	margin:0 0px;
-}
- 
-#cssmenu ul ul{
-    display:none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: auto;
-    z-index:9999;
-}
- 
-#cssmenu ul ul li{
-    width: 210px;
-}
- 
-#cssmenu ul li:hover > ul {
-    display: block;
+.middle-header {
+	position: relative;
+	margin:0;
+	padding:0;
+	.img {
+		position: absolute;
+		margin:0;
+		padding:0;
+	}
+	.description {
+		position: absolute;
+		width:90%;
+		margin:0 5%;
+		top:75px;
+		text-align: center;
+		color: rgb(255,255,255);
+		p {
+			font-size: 500%;
+			font-family: 'cafetaregular';
+			text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+		}
+	}
 }
 
-#cssmenu ul li ul li a {
-    display: block;
-    background: none;
-}
-
-#cssmenu ul li ul li a:hover {
-    display: block;
-}
- 
-#cssmenu ul ul ul {
-    left: 100%;
-    top: 0;
-    z-index:9999; 
-}
-
-#cssmenu ul li ul li a {
-    display: block;
-    background: none;
-    width:100%;
-}
-
-#cssmenu ul li ul li a:hover {
-    display: block;
-}
+	.bottom-header {
+		margin:0;
+		padding:0;
+		background: rgb(205,231,231);
+		h2 {
+			margin:0;
+			padding:10px 0 0 0;
+			text-align: center;
+			color: rgb(70,90,122);
+			font-size:290%;
+			font-family: 'cafetaregular';
+			text-transform: uppercase;
+		}
+		h3 {
+			margin:0;
+			padding:0 0 10px 0;
+			text-align: center;
+			color: rgb(70,90,122);
+			font-size:160%;
+			font-family: 'montserratregular';
+		}
+	}
+	
 }

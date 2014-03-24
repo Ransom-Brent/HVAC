@@ -1,0 +1,86 @@
+.entry {
+	margin:0;
+	padding:0;
+	h1 {
+		margin:0;
+		padding:10px 0;
+		color: rgb(70,90,122);
+		font-size:250%;
+		font-family: 'cafetaregular';
+		text-transform: uppercase;
+	}
+	h2 {
+		
+	}
+	h3 {
+		
+	}
+	h4 {
+		
+	}
+	h5 {
+		
+	}
+	h6 {
+		
+	}
+	p {
+		margin:0;
+		padding:0 0 10px 0;
+		color: rgb(70,90,122);
+		font-size:100%;
+		font-family: 'montserratregular';
+	}
+	.testimonials {
+		margin:0;
+		padding:0 0 10px 0;
+		p {
+			color: rgb(70,90,122);
+			font-size:100%;
+			font-family: 'montserratregular';
+		}
+	}
+	.service-1, .service-2, .service-3, .service-4 {
+		margin:0 0 20px;
+		padding:0;
+		text-align: center;
+		img {
+			margin:0;
+			padding:10px 0 0 0;
+		}
+		h2 {
+			margin:0;
+			padding:10px 0;
+			color: rgb(70,90,122);
+			font-size:170%;
+			font-family: 'cafetaregular';
+			text-transform: uppercase;
+		}	
+	}
+	.service-1:hover, .service-2:hover, .service-3:hover, .service-4:hover {
+		margin:0 0 20px;
+		padding:0;
+		background: rgb(205,231,231);
+	}
+	.choose-us {
+		margin:0;
+		padding:0;
+		background: rgb(244,244,244);
+		h2 {
+			margin:0;
+			padding:10px 0;
+			color: rgb(70,90,122);
+			font-size:250%;
+			font-family: 'cafetaregular';
+			text-transform: uppercase;	
+		}
+		h3 {
+			margin:0;
+			padding:10px 0 5px;
+			color: rgb(70,90,122);
+			font-size:130%;
+			font-family: 'cafetaregular';
+			text-transform: uppercase;
+		}
+	}
+}

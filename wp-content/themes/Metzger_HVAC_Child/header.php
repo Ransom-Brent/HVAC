@@ -88,7 +88,13 @@
 			<?php $header_img = get_field('header_image', 'option'); if ($header_img): ?>
 				<img src="<?php echo $header_img['url']; ?>" alt="<?php echo $header_img['alt']; ?>" />
 			<?php endif; ?>	
-			<div class="description"><?php bloginfo('description'); ?></div>
+			<div class="description">
+				<div class="row">
+					<div class="large-12 medium-12 small-12 columns">
+						<p><?php bloginfo('description'); ?></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<div class="bottom-header">
